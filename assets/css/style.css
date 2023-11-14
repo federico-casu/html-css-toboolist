@@ -107,8 +107,8 @@ li {
     /* check before li */
     content: '\002713';
     margin-inline: -0.5em 2px;
-    color: lightgreen;
-    border: 1px solid lightgreen;
+    color: green;
+    border: 1px solid green;
     border-radius: 50%;
     font-size: 12px;
     padding: 1px 3px;
@@ -116,13 +116,14 @@ li {
 
 .cross::before {
     /* check before li */
-    content: '\002a2f';
+    content: '\00274c';
     margin-inline: -0.5em 2px;
     color: red;
     border: 1px solid red;
     border-radius: 50%;
-    font-size: 20px;
-    padding: 1px 3px;
+    font-size: 10px;
+    padding: 3px 3px 3px 3px;
+    /* padding: 0px 5px 2px 5px; */
 }
 
 .editorial::after {
@@ -190,3 +191,5 @@ li {
     color: white;
     font-size: 12px;
 }
+
+/* EXERCISE COMPLETED */
