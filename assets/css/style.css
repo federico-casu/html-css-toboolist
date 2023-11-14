@@ -24,7 +24,7 @@ h1 {
 
 main {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     border: 1px solid black;
     background-color: rgb(246, 248, 249);
 }
@@ -35,8 +35,11 @@ main {
     margin: 30px auto;
 }
 
-.buttons {
+.padding-20-50 {
     padding: 20px 50px;
+}
+
+.buttons {
     /* border: 2px solid green; */
     border-radius: 10px 10px 0 0;
     background-color: white;
@@ -68,11 +71,31 @@ main {
     margin-top: 5px;
     /* border: 1px solid blue; */
     background-color: white;
-
 }
 
 li {
     margin-left: 1em;
+    padding-block: 10px;
+    list-style: none;
 }
 
-.li-title {}
+.li-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.li-title::before {
+    /* down triangle before li-title */
+}
+
+.li-title+ul li {
+    font-size: 20px;
+}
+
+.li-title+ul li::before {
+    /* cross or check before li */
+}
+
+.li-title+ul li::after {
+    /* label after li */
+}
