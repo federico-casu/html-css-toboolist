@@ -4,4 +4,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+header img {
+    width: 70px;
+    margin: 0 10px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rgb(246, 248, 249);
+}
+
+.buttons {
+    background-color: white;
+    border: 2px dashed green;
+}
+
+.buttons button {
+    width: 100px;
+    height: 30px;
+    padding-block: 5px;
+    border-radius: 5px;
+
+}
+
+.buttons :first-child {
+    background-color: rgba(72, 173, 241, 1);
+    color: white;
+    border: 0;
+}
+
+.buttons :last-child {
+    color: rgba(203, 208, 214, 1);
+    background-color: white;
+    border: 1px solid rgba(203, 208, 214, 1);
+
+
 }
