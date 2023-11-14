@@ -8,6 +8,7 @@
 }
 
 header {
+    height: 20%;
     border: 1px solid red;
     padding: 10px;
 }
@@ -15,11 +16,13 @@ header {
 header img {
     width: 70px;
     margin: 0 10px;
+    vertical-align: middle;
 }
 
 h1 {
     display: inline-block;
     font-size: 50px;
+    vertical-align: middle;
 }
 
 main {
@@ -86,6 +89,7 @@ li {
 
 .li-title::before {
     /* down triangle before li-title */
+    content: '\25BE';
 }
 
 .li-title+ul li {
