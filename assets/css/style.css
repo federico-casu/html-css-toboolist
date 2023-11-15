@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -103,93 +106,75 @@ li {
     font-size: 20px;
 }
 
-.checked::before {
-    /* check before li */
-    content: '\002713';
+.circle::before {
     margin-inline: -0.5em 2px;
-    color: green;
-    border: 1px solid green;
     border-radius: 50%;
     font-size: 12px;
-    padding: 1px 3px;
+    padding: 1px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.checked::before {
+    /* check before li */
+    content: '\2713';
+    color: green;
+    border: 1px solid green;
 }
 
 .cross::before {
-    /* check before li */
-    content: '\00274c';
-    margin-inline: -0.5em 2px;
+    /* cross before li */
+    content: '\292B';
     color: red;
     border: 1px solid red;
-    border-radius: 50%;
-    font-size: 10px;
-    padding: 3px 3px 3px 3px;
-    /* padding: 0px 5px 2px 5px; */
+}
+
+.label::after {
+    margin-left: 5px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 12px;
 }
 
 .editorial::after {
     /* label after li */
     content: 'Editorial';
-    margin-left: 5px;
     background-color: rgba(72, 173, 241, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
+    
 }
 
 .q1-goals::after {
     /* label after li */
     content: 'Q1 Goals';
-    margin-left: 5px;
     background-color: rgba(156, 114, 228, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
 }
 
 .mobile::after {
     /* label after li */
     content: 'Mobile';
-    margin-left: 5px;
     background-color: rgba(242, 158, 51, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
 }
 
 .website::after {
     /* label after li */
     content: 'Website';
-    margin-left: 5px;
     background-color: rgba(215, 99, 161, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
 }
 
 .sales::after {
     /* label after li */
     content: 'Sales';
-    margin-left: 5px;
     background-color: rgba(176, 201, 37, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
 }
 
 .recruiting::after {
     /* label after li */
     content: 'Recruiting';
-    margin-left: 5px;
     background-color: rgba(100, 192, 169, 1);
-    border-radius: 15px;
-    padding: 10px 15px;
-    color: white;
-    font-size: 12px;
 }
 
 /* EXERCISE COMPLETED */
